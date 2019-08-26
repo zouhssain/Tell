@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tell Me</string>
+
+
+    <string name="error_incorrect_password">Vous devez saisir un mot de passe</string>
+    <string name="error_incorrect_login">Vous devez saisir un Login</string>
+
+    <string name="err_name">Veuillez saisir un nom valide</string>
+    <string name="err_email">Veuillez saisir un email valide</string>
+    <string name="err_phone">Veuillez saisir un numero valide</string>
+    <string name="err_password">Veuillez saisir un mot de passe valide</string>
+    <string name="err_confirm_password">le mot de passe n\'est pas identique</string>
+</resources>
