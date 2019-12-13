@@ -68,7 +68,7 @@ public class Login extends Activity {
         final String email = editTextEmail.getText().toString().trim();
         final String password = editTextPassword.getText().toString().trim();
 
-        EditText lgn = (EditText)findViewById(R.id.login);
+        final EditText lgn = (EditText)findViewById(R.id.login);
         EditText pass = (EditText)findViewById(R.id.password);
         lgn.setError(null);
 
@@ -88,9 +88,10 @@ public class Login extends Activity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
                         Intent intent = new Intent(Login.this, MySpace.class);
+                        intent.putExtra("email", lgn.getText().toString());
                         startActivity(intent);
                         finish();
-                        Toast.makeText(Login.this, "Login seccesful!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "Login succesful!", Toast.LENGTH_SHORT).show();
                     }else {
                         Toast.makeText(Login.this, "Invalid username or password", Toast.LENGTH_LONG).show();
                     }

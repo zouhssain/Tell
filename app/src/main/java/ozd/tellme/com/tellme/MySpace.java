@@ -43,6 +43,12 @@ public class MySpace extends Activity {
         textadecoder = (EditText)findViewById(R.id.textadecoder);
         edit_cle_decodage = (EditText)findViewById(R.id.edit_cle_decodage);
 
+        Bundle bundle = getIntent().getExtras();
+        String email = bundle.getString("email");
+        TextView message = (TextView)findViewById(R.id.message);
+        message.setText("Welcome "+email);
+
+
         Intent intent_1 = getIntent();
         //email_passer =intent_1.getStringExtra(Login.email_utilisateur);
 
