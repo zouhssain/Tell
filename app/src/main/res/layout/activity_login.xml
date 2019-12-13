@@ -7,6 +7,12 @@ android:layout_height="match_parent"
 android:background="#f359"
 tools:context=".Login">
 
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true">
 <ScrollView
     android:id="@+id/login_form"
     android:layout_width="match_parent"
@@ -99,6 +105,7 @@ tools:context=".Login">
 
     </LinearLayout>
 </ScrollView>
+    </RelativeLayout>
 
 <ImageView
     android:id="@+id/imageView"

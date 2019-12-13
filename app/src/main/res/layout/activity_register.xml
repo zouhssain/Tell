@@ -7,12 +7,18 @@ android:layout_height="match_parent"
 android:background="#f359"
 tools:context=".Register">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true">
+
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
     android:textColor="#ffffff"
-    android:text="SIGN UP"
+    android:text="S'INSCRIRE"
     android:layout_marginTop="20dp"
     android:textSize="35dp" />
 
@@ -21,7 +27,7 @@ tools:context=".Register">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:icon="@android:drawable/ic_lock_idle_lock"
-    android:layout_marginTop="150dp"
+    android:layout_marginTop="100dp"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:drawableLeft="@drawable/ic_person_name"
@@ -135,6 +141,7 @@ tools:context=".Register">
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:text="Register" />
+    </RelativeLayout>
 
 
 </RelativeLayout>
